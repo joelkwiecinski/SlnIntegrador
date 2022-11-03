@@ -8,12 +8,12 @@ using Entidades.Models.Derivada;
 
 namespace Negocio
 {
-    public class AdmPaciente
+    public static class AdmPaciente
     {
 
-        List<Paciente> pacientes;
+        static List<Paciente> pacientes;
 
-        public List<Paciente> Listar()
+        public static List<Paciente> Listar()
         {
             pacientes = new List<Paciente>();
             pacientes.Add(new Paciente() { Id = 0, Nombre = "Alvaro", Apellido = "Benitez", Domicilio = "Mitre 2742", Telefono = "45642832", Email = "alvarobenitez@gmail.com", NroHistoriaClinica = 46316 });
@@ -23,17 +23,17 @@ namespace Negocio
             return pacientes;
         }
 
-        public int Insertar(Paciente paciente)
+        public static int Insertar(Paciente paciente)
         {
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             return 0;
         }
 
-        public Paciente TraerUno(int nroHistoriaClinica)
+        public static Paciente TraerUno(int nroHistoriaClinica)
         {
             return null;
         }

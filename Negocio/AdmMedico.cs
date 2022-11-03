@@ -8,12 +8,12 @@ using Entidades.Models.Derivada;
 
 namespace Negocio
 {
-    public class AdmMedico
+    public static class AdmMedico
     {
 
-        List<Medico> medicos;
+        static List<Medico> medicos;
 
-        public List<Medico> Listar()
+        public static List<Medico> Listar()
         {
             medicos = new List<Medico>();
             medicos.Add(new Medico() { Id=0, Nombre = "Raúl", Apellido = "Constanzo", Domicilio = "Calle Falsa 123", Telefono = "261364173", Email = "raulconstanzo@gmail.com", Especialidad = "Clínico", Matricula = 42313 });
@@ -23,7 +23,7 @@ namespace Negocio
             return medicos;
         }
 
-        public List<Medico> Listar(string especialidad)
+        public static List<Medico> Listar(string especialidad)
         {
             List<Medico> tempMedicos = new List<Medico> { };
             foreach (Medico medico in medicos)
@@ -36,17 +36,17 @@ namespace Negocio
             return tempMedicos;
         }
 
-        public int Insertar(Medico medico)
+        public static int Insertar(Medico medico)
         {
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             return 0;
         }
 
-        public Medico TraerUno(int id)
+        public static Medico TraerUno(int id)
         {
             return null;
         }

@@ -8,12 +8,12 @@ using Entidades.Models.Derivada;
 
 namespace Negocio
 {
-    public class AdmHabitacion
+    public static class AdmHabitacion
     {
 
-        List<Habitacion> habitaciones;
+        static List<Habitacion> habitaciones;
 
-        public List<Habitacion> Listar()
+        public static List<Habitacion> Listar()
         {
             habitaciones = new List<Habitacion>();
             habitaciones.Add(new Habitacion() { Id = 0, Numero = 321, Estado = "Ocupada" });
@@ -23,22 +23,22 @@ namespace Negocio
             return habitaciones;
         }
 
-        public List<Habitacion> Listar(string estado)
+        public static List<Habitacion> Listar(string estado)
         {
             return null;
         }
 
-        public int Insertar(Habitacion habitacion)
+        public static int Insertar(Habitacion habitacion)
         {
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             return 0;
         }
 
-        public Habitacion TraerUno(int numero)
+        public static Habitacion TraerUno(int numero)
         {
             return null;
         }
