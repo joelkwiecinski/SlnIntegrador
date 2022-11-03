@@ -31,9 +31,7 @@ namespace WindowsPresentacion
             gridDatos.DataSource = admMedicos.Listar();
 
             lstMedicosClinicos.Items.Clear();
-            List<Medico> medicosClinicos;
-            medicosClinicos = admMedicos.Listar("Clínico");
-            foreach (Medico medico in medicosClinicos)
+            foreach (Medico medico in admMedicos.Listar("Clínico"))
             {
                 lstMedicosClinicos.Items.Add(medico.Nombre + " " + medico.Apellido);
             }
