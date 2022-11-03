@@ -45,7 +45,7 @@
             this.gridDatos.Name = "gridDatos";
             this.gridDatos.RowHeadersWidth = 72;
             this.gridDatos.RowTemplate.Height = 31;
-            this.gridDatos.Size = new System.Drawing.Size(737, 535);
+            this.gridDatos.Size = new System.Drawing.Size(1117, 535);
             this.gridDatos.TabIndex = 0;
             // 
             // btnVerMedicos
@@ -72,7 +72,7 @@
             // 
             this.lstMedicosClinicos.FormattingEnabled = true;
             this.lstMedicosClinicos.ItemHeight = 24;
-            this.lstMedicosClinicos.Location = new System.Drawing.Point(785, 99);
+            this.lstMedicosClinicos.Location = new System.Drawing.Point(1150, 99);
             this.lstMedicosClinicos.Name = "lstMedicosClinicos";
             this.lstMedicosClinicos.Size = new System.Drawing.Size(310, 532);
             this.lstMedicosClinicos.TabIndex = 3;
@@ -80,7 +80,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(780, 55);
+            this.label1.Location = new System.Drawing.Point(1145, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 25);
             this.label1.TabIndex = 4;
@@ -89,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1118, 55);
+            this.label2.Location = new System.Drawing.Point(1483, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 25);
             this.label2.TabIndex = 6;
@@ -99,7 +99,7 @@
             // 
             this.lstHabitaciones.FormattingEnabled = true;
             this.lstHabitaciones.ItemHeight = 24;
-            this.lstHabitaciones.Location = new System.Drawing.Point(1123, 99);
+            this.lstHabitaciones.Location = new System.Drawing.Point(1488, 99);
             this.lstHabitaciones.Name = "lstHabitaciones";
             this.lstHabitaciones.Size = new System.Drawing.Size(310, 532);
             this.lstHabitaciones.TabIndex = 5;
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1448, 671);
+            this.ClientSize = new System.Drawing.Size(1822, 671);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lstHabitaciones);
             this.Controls.Add(this.label1);

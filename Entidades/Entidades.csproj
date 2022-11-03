@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayudantes\UtilidadesFechas.cs" />
     <Compile Include="Models.Base\Persona.cs" />
     <Compile Include="Models.Derivada\Clinica.cs" />
     <Compile Include="Models.Derivada\Director.cs" />

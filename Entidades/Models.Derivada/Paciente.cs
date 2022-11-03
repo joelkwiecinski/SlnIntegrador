@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades.Ayudantes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +11,13 @@ namespace Entidades.Models.Derivada
     {
 
         public int NroHistoriaClinica { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public int Edad { get { return UtilidadesFechas.CalcularEdad(FechaNacimiento); } }
 
-        public Paciente(int id, string nombre, string apellido, string domicilio, string telefono, string email, int nroHistoriaClinica):base(id, nombre, apellido, domicilio, telefono, email)
+        public Paciente(int id, string nombre, string apellido, string domicilio, string telefono, string email, int nroHistoriaClinica, DateTime fechaNacimiento):base(id, nombre, apellido, domicilio, telefono, email)
         {
             NroHistoriaClinica = nroHistoriaClinica;
+            FechaNacimiento = fechaNacimiento;
         }
 
         public Paciente() { }
